@@ -1,4 +1,7 @@
-{% extends 'base.html' %} {% import 'macros.html' as macro %} {%block content%}
+{% extends 'base.html' %} {% import 'macros.html' as macro %}
+
+
+{%block content%}
 <div class=back>
     <div class=" text-center ">
         <h1 class="head"><strong>Welcome to the Best pitch</strong></h1>
@@ -12,7 +15,8 @@
                 <div class="well well-lg" style="text-align: center;">
                     <h3>Inspirational Pitches</h3>
                     <hr>
-                    <p>The greatest thing in this world is not so much where we stand, as in what direction we are moving </p>
+                    <p>The greatest thing in this world is not so much where we stand, as in what direction we are
+                        moving </p>
                     <a href="{{url_for('main.interview_pitches')}}" class="btn btn-info btn-center -center">Click to
                         view</a>
                 </div>
@@ -40,6 +44,12 @@
     </div>
 </div>
 
-sy
 
+<style>
+    body{
+        background-image:url(../static/far.jpg);
+        background-repeat:no-repeat ;
+        background-size: cover;
+    }
+</style>
 {%endblock%}
